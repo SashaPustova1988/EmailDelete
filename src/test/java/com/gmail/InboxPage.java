@@ -27,7 +27,7 @@ public class InboxPage extends WebdriverInitial {
     private WebElement selectAllCheckbox;
     @FindBy (css= ".nX > div:nth-child(1)")
     private WebElement deleteAll;
-    @FindBy (css = "#\\:1z > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)")
+    @FindBy (xpath = "/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div/div[2]/div/div[1]/div/div/div[6]/div/div[1]/div[1]/div[2]/div/div/div")
     private WebElement messageEmpty;
     public void setSelectAllCheckbox()
     {
