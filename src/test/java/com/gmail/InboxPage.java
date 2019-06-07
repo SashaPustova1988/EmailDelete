@@ -23,7 +23,7 @@ public class InboxPage extends WebdriverInitial {
     //сообщение о пустом ящике
    //By messageEmpty = By.cssSelector("#\\:1z > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)");
     // выбрать чек-бок "Выбрать все"
-    @FindBy (css = "span.T-Jo")
+    @FindBy (xpath = "/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div/div[1]/div/div[1]/div[1]/div/div/div[1]/div/div[1]/span")
     private WebElement selectAllCheckbox;
     @FindBy (css= ".nX > div:nth-child(1)")
     private WebElement deleteAll;
