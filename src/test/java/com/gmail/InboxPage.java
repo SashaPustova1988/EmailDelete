@@ -1,9 +1,7 @@
 package com.gmail;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -16,13 +14,6 @@ public class InboxPage extends WebdriverInitial {
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
-    //нажать "Выбрать все письма"
-   // By selectAllCheckbox = By.cssSelector("span.T-Jo");
-    //удалить
-   // By deleteAll = By.cssSelector(".nX > div:nth-child(1)");
-    //сообщение о пустом ящике
-   //By messageEmpty = By.cssSelector("#\\:1z > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)");
-    // выбрать чек-бок "Выбрать все"
     @FindBy (xpath = "/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div/div[1]/div/div[1]/div[1]/div/div/div[1]/div/div[1]/span")
     private WebElement selectAllCheckbox;
     @FindBy (css= ".nX > div:nth-child(1)")

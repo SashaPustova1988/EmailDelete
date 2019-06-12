@@ -1,8 +1,6 @@
 package com.gmail;
 
 import org.junit.Test;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestPage extends WebdriverInitial {
     private String emailLogin = "testsasha0405@gmail.com";
@@ -19,11 +17,8 @@ public class TestPage extends WebdriverInitial {
         InboxPage inboxPage = new InboxPage (driver);
 
         while(!inboxPage.isEmpty()){
-            WebDriverWait wait = new WebDriverWait(driver, 1);
         inboxPage.setSelectAllCheckbox();
-            wait = new WebDriverWait(driver, 1);
         inboxPage.clickDeleteAll();
-            wait = new WebDriverWait(driver, 1);
        }
     }
 }
