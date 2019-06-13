@@ -8,8 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 
 
 public class LoginPage extends WebdriverInitial {
-    private WebDriver driver;
-    public LoginPage(FirefoxDriver driver)
+    private final WebDriver driver;
+    public LoginPage( final FirefoxDriver driver)
     {
         this.driver = driver;
         PageFactory.initElements(driver,this);

@@ -10,8 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PasswordPage extends WebdriverInitial{
 
-    private WebDriver driver;
-    public PasswordPage(WebDriver driver)
+    private final WebDriver driver;
+    public PasswordPage( final WebDriver driver)
     {
         this.driver = driver;
         PageFactory.initElements(driver,this);
