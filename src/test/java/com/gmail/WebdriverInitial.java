@@ -13,7 +13,7 @@ public class WebdriverInitial {
     public void setUp() {
         System.setProperty("webdriver.gecko.driver", "C:\\FirefoxDriver\\geckodriver.exe");
         driver  = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("https://gmail.com");
     }
     @After
